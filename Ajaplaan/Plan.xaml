@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ajaplaan.Plan">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalOptions="Center"
+                   Text="Plan"
+                   FontSize="30"
+                   TextColor="Black"
+                   x:Name="Lbl"
+                   BackgroundColor="Aqua">
+
+
+            </Label>
+            <Image Source="arrow.png"
+                   x:Name="img"
+                   WidthRequest="250">
+
+            </Image>
+            <TimePicker Time="{Binding SelectedTime}"
+                        x:Name="tpicker"
+                        Format="T"
+                        HorizontalOptions="Center"
+                        PropertyChanged="TimePicker_PropertyChanged"
+                        >
+
+            </TimePicker>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
